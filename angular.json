@@ -46,7 +46,10 @@
               },
               {
                 "input": "src/theme/showingtime-typography.scss"
-              },               
+              },
+              {
+                "input": "src/theme/showingtime-ui-elements.scss"
+              },                          
               {
                 "input": "src/theme/showingtime-layout.scss"
               }

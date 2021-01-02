@@ -1,0 +1,48 @@
+ion-button {
+  // Button - Default size
+  --padding-top: var(--var-btn-default-padding-y, 8px);
+  --padding-bottom: var(--var-btn-default-padding-y, 8px);
+  --padding-start: var(--var-btn-default-padding-x, 12px);
+  --padding-end: var(--var-btn-default-padding-x, 12px);
+  --border-radius: var(--var-border-radius-default, 4px);
+  height: var(--var-btn-default-height, 32px);
+  font-size: var(--var-btn-default-font-size, 14px);
+
+  ion-icon {
+    font-size: inherit;
+    margin-top: -2px;
+  }
+
+  &[size="large"] {
+    // Button - Large size
+    --padding-top: var(--var-btn-large-padding-y, 14px);
+    --padding-bottom: var(--var-btn-large-padding-y, 14px);
+    --padding-start: var(--var-btn-large-padding-x, 18px);
+    --padding-end: var(--var-btn-large-padding-x, 18px);
+    --border-radius: var(--var-border-radius-large, 4px);
+    height: var(--var-btn-large-height, 44px);
+    font-size: var(--var-btn-large-font-size, 16px);
+  }
+
+  &[size="small"] {
+    // Button - Small size
+    --padding-top: var(--var-btn-small-padding-y, 6px);
+    --padding-bottom: var(--var-btn-small-padding-y, 6px);
+    --padding-start: var(--var-btn-small-padding-x, 10px);
+    --padding-end: var(--var-btn-small-padding-x, 10px);
+    --border-radius: var(--var-border-radius-small, 3px);
+    height: var(--var-btn-small-height, 24px);
+    font-size: var(--var-btn-small-font-size, 12px);
+  }
+
+  &[size="tiny"] {
+    // Button - Tiny size
+    --padding-top: var(--var-btn-tiny-padding-y, 4px);
+    --padding-bottom: var(--var-btn-tiny-padding-y, 4px);
+    --padding-start: var(--var-btn-tiny-padding-x, 6px);
+    --padding-end: var(--var-btn-tiny-padding-x, 6px);
+    --border-radius: var(--var-border-radius-tiny, 2px);
+    height: var(--var-btn-tiny-height, 18px);
+    font-size: var(--var-btn-tiny-font-size, 10px);
+  }
+}
