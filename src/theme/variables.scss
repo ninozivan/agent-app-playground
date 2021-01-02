@@ -87,6 +87,12 @@
   --ion-grid-padding-lg: 0;
   --ion-grid-padding-xl: 0;
 
+  --ion-grid-width-xs: 100%;
+  --ion-grid-width-sm: 540px;
+  --ion-grid-width-md: 720px;
+  --ion-grid-width-lg: 960px;
+  --ion-grid-width-xl: 1140px;
+
   /** Ionic - Grid Columns **/
   --ion-grid-column-padding-xs: var(--var-spacing-base, 10px);
   --ion-grid-column-padding-sm: var(--var-spacing-base, 10px);

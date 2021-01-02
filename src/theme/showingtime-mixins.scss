@@ -1,3 +1,4 @@
+// Alignment
 @mixin mx-center-element($horizontal: true, $vertical: true) {
   position: absolute;
   @if ($horizontal and $vertical) {
@@ -10,5 +11,37 @@
   } @else if ($vertical) {
     top: 50%;
     transform: translate(0, -50%);
+  }
+}
+
+// Breakpoints
+@mixin mx-breakpoint-xs375-up {
+  @media (min-width: 375px) {
+    @content;
+  }
+}
+@mixin mx-breakpoint-sm-up {
+  @media (min-width: 576px) {
+    @content;
+  }
+}
+@mixin mx-breakpoint-md-up {
+  @media (min-width: 768px) {
+    @content;
+  }
+}
+@mixin mx-breakpoint-lg-up {
+  @media (min-width: 992px) {
+    @content;
+  }
+}
+@mixin mx-breakpoint-xl-up {
+  @media (min-width: 1200px) {
+    @content;
+  }
+}
+@mixin mx-breakpoint-xxl-up {
+  @media (min-width: 1920px) {
+    @content;
   }
 }
