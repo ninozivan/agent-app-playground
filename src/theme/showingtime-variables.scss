@@ -2,6 +2,7 @@
   --var-sidebar-width: 220px;
   --var-spacing-base: 10px;
 
+  // Global - Typography
   --var-typography-h1-size: 30px;
   --var-typography-h2-size: 24px;
   --var-typography-h3-size: 22px;
@@ -11,28 +12,37 @@
   --var-typography-p-size: 14px;
   --var-typography-small-size: 12px;
 
+  // Global - Border radius
   --var-border-radius-large: 6px;
   --var-border-radius-default: 4px;
   --var-border-radius-small: 3px;
   --var-border-radius-tiny: 2px;
 
+  // Buttons - Large size
   --var-btn-large-height: 44px;
   --var-btn-large-font-size: 16px;
   --var-btn-large-padding-x: 18px;
   --var-btn-large-padding-y: 14px;
 
+  // Buttons - Default size
   --var-btn-default-height: 32px;
   --var-btn-default-font-size: 14px;
   --var-btn-default-padding-x: 12px;
   --var-btn-default-padding-y: 8px;
 
+  // Buttons - Small size
   --var-btn-small-height: 24px;
   --var-btn-small-font-size: 12px;
   --var-btn-small-padding-x: 10px;
   --var-btn-small-padding-y: 6px;
 
+  // Buttons - Tiny size
   --var-btn-tiny-height: 18px;
   --var-btn-tiny-font-size: 10px;
   --var-btn-tiny-padding-x: 6px;
   --var-btn-tiny-padding-y: 4px;
+
+  // Badge
+  --var-badge-padding-x: 4px;
+  --var-badge-padding-y: 2px;
 }
