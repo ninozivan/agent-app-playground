@@ -1,0 +1,29 @@
+$var-sidebar-width: var(--var-sidebar-width);
+
+ion-content{
+    &.st-has-sidebar-left{
+        --padding-start: var(--var-sidebar-width);
+    }
+    &.st-has-sidebar-right{
+        --padding-end: var(--var-sidebar-width);
+    }
+}
+
+.st-sidebar{
+    display: inline-block;
+    width: $var-sidebar-width;
+    box-sizing: border-box;
+
+    &.st-sidebar-left{
+        top: 0;
+        right: auto;
+        left: 0;
+        bottom: 0;
+    }
+    &.st-sidebar-right{
+        top: 0;
+        right: 0;
+        left: auto;
+        bottom: 0;
+    }
+}
