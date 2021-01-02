@@ -36,6 +36,9 @@
                 "input": "src/theme/variables.scss"
               },
               {
+                "input": "src/global.scss"
+              },              
+              {
                 "input": "src/theme/showingtime-variables.scss"
               },
               {
@@ -46,9 +49,6 @@
               },               
               {
                 "input": "src/theme/showingtime-layout.scss"
-              },                                          
-              {
-                "input": "src/global.scss"
               }
             ],
             "scripts": []
