@@ -40,7 +40,10 @@
               },
               {
                 "input": "src/theme/showingtime-colors.scss"
-              },  
+              },
+              {
+                "input": "src/theme/showingtime-typography.scss"
+              },               
               {
                 "input": "src/theme/showingtime-layout.scss"
               },                                          
