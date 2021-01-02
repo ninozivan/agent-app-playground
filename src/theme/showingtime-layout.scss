@@ -1,29 +1,43 @@
-$var-sidebar-width: var(--var-sidebar-width);
-
-ion-content{
-    &.st-has-sidebar-left{
-        --padding-start: var(--var-sidebar-width);
-    }
-    &.st-has-sidebar-right{
-        --padding-end: var(--var-sidebar-width);
-    }
+ion-app {
+  /* IMPORTANT: constant and env, are used for adding safe space area on the devices with notch. Otherwise, when application is started as a PWA (from the 'desktop' icon of the phone, any footer content will overlap with native on-screen buttons */
+  margin-bottom: constant(safe-area-inset-bottom); // < iOS 11.2
+  margin-bottom: env(safe-area-inset-bottom); // > iOS11.2
 }
 
-.st-sidebar{
-    display: inline-block;
-    width: $var-sidebar-width;
-    box-sizing: border-box;
+$var-sidebar-width: var(--var-sidebar-width);
 
-    &.st-sidebar-left{
-        top: 0;
-        right: auto;
-        left: 0;
-        bottom: 0;
-    }
-    &.st-sidebar-right{
-        top: 0;
-        right: 0;
-        left: auto;
-        bottom: 0;
-    }
+ion-content {
+  --background: var(--var-content-background);
+
+  &.st-has-sidebar-left {
+    --padding-start: var(--var-sidebar-width);
+  }
+  &.st-has-sidebar-right {
+    --padding-end: var(--var-sidebar-width);
+  }
+}
+
+.st-sidebar {
+  display: inline-block;
+  width: $var-sidebar-width;
+  box-sizing: border-box;
+
+  &.st-sidebar-left {
+    top: 0;
+    right: auto;
+    left: 0;
+    bottom: 0;
+  }
+  &.st-sidebar-right {
+    top: 0;
+    right: 0;
+    left: auto;
+    bottom: 0;
+  }
+}
+
+@media (prefers-color-scheme: dark) {
+  ion-content {
+    --background: var(--var-dm-content-background);
+  }
 }

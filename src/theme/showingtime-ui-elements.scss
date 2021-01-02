@@ -1,3 +1,5 @@
+@import "../theme/showingtime-mixins.scss";
+
 ion-button {
   // Button - Default size
   --padding-top: var(--var-btn-default-padding-y, 8px);
@@ -127,4 +129,24 @@ ion-badge {
   --padding-start: var(--var-badge-padding-x, 4px);
   --padding-end: var(--var-badge-padding-x, 4px);
   font-size: 10px;
+}
+
+ion-searchbar {
+  --background: var(--var-color-white, #ffffff) !important;
+  --border-radius: var(--var-border-radius-large, 6px) !important;
+  --box-shadow: none !important;
+  --clear-button-color: var(--var-text-color-light, #383a3e) !important;
+  --color: var(--var-text-color-medium, #383a3e) !important;
+  --icon-color: var(--var-text-color-light, #383a3e) !important;
+  --placeholder-color: var(--var-text-color-light, #383a3e) !important;
+
+  font-size: var(--var-typography-default-size, 16px);
+  .searchbar-input-container {
+    input {
+      padding-left: var(--var-spacing-medium, 14px) !important;
+    }
+    ion-icon.searchbar-search-icon {
+      display: none;
+    }
+  }
 }
