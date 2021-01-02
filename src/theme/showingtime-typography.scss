@@ -101,6 +101,12 @@
 
 :root {
   --ion-font-family: "Roboto", Helvetica, Arial, Verdana, sans-serif;
+  --ion-text-color: var(--var-text-color-medium);
+}
+
+body {
+  font-size: var(--var-typography-default-size);
+  color: var(--var-text-color-medium);
 }
 
 h1 {

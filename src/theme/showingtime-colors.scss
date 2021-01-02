@@ -1,5 +1,5 @@
 :root {
-  /** Black <-> White shades **/
+  /** Global - Black <-> White shades **/
   --var-color-black: #222428;
   --var-color-black-90perc: #383a3e;
   --var-color-black-80perc: #4e5053;
@@ -12,7 +12,15 @@
   --var-color-black-10perc: #e9e9ea;
   --var-color-white: #ffffff;
 
-  /** ShowingTime - Custom colors for the notifications (badges, chip, toast, etc) **/
+  /** Global - Borders **/
+  --var-border-color: #dddddd;
+  --var-dm-border-color: #6a6a6a; // 'dm' - Dark Mode
+
+  /** Global - Text **/
+  --var-text-color-medium: var(--var-color-black-90perc, #383a3e);
+  --var-text-color-light: var(--var-color-black-50perc, #919294);
+
+  /** Notifications - Custom colors (badges, chip, toast, etc) **/
   --var-notification-color-primary: #209cf6;
   --var-notification-color-secondary: #3dc2ff;
   --var-notification-color-tertiary: #5260ff;
@@ -23,9 +31,7 @@
   --var-notification-color-medium: var(--var-color-50perc, #92949c);
   --var-notification-color-light: var(--var-color-10perc, #e9e9ea);
 
+  /** 'ion-content' - Custom colors **/
   --var-content-background: #f1f1f1;
   --var-dm-content-background: #202020; // 'dm' - Dark Mode
-
-  --var-border-color: #dddddd;
-  --var-dm-border-color: #6a6a6a; // 'dm' - Dark Mode
 }
