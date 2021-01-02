@@ -17,6 +17,25 @@
   </div>
 
   <ion-grid>
+    <ion-row>
+      <ion-col> ion-col </ion-col>
+      <ion-col> ion-col </ion-col>
+      <ion-col> ion-col </ion-col>
+      <ion-col> ion-col </ion-col>
+    </ion-row>
+    <ion-row>
+      <ion-col size="3"> ion-col [size="3"] </ion-col>
+      <ion-col size="3" offset="3"> ion-col [size="3"] [offset="3"] </ion-col>
+    </ion-row>
+    <ion-row>
+      <ion-col class="ion-align-self-start"> ion-col [start] </ion-col>
+      <ion-col class="ion-align-self-center"> ion-col [center] </ion-col>
+      <ion-col class="ion-align-self-end"> ion-col [end] </ion-col>
+      <ion-col>
+        ion-col
+        <br /># <br />#
+      </ion-col>
+    </ion-row>
     <strong>Ready to create an app?</strong>
     <p>
       Start with Ionic
@@ -55,7 +74,10 @@
       markup:
     </p>
     <!-- SEARCHBAR -->
-    <ion-searchbar showCancelButton="always" placeholder="Filter Schedules"></ion-searchbar>
+    <ion-searchbar
+      showCancelButton="always"
+      placeholder="Filter Schedules"
+    ></ion-searchbar>
 
     <!-- BUTTONS -->
     <hr />
