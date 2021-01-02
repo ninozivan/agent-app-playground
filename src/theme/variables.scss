@@ -74,6 +74,17 @@
   --ion-color-light-contrast-rgb: 0, 0, 0;
   --ion-color-light-shade: #d4d4d4;
   --ion-color-light-tint: #f2f2f2;
+
+  /** ShowingTime - Custom colors for the notifications (badges, chip, toast, etc) **/
+  --var-notification-color-primary: #209CF6;
+  --var-notification-color-secondary: #3dc2ff;
+  --var-notification-color-tertiary: #5260ff;
+  --var-notification-color-success: #00AD3A;
+  --var-notification-color-warning: #FFBD18;
+  --var-notification-color-danger: #FF0808;
+  --var-notification-color-dark: #222428;
+  --var-notification-color-medium: #92949c;
+  --var-notification-color-light: #f4f5f8;  
 }
 
 @media (prefers-color-scheme: dark) {
