@@ -1,0 +1,37 @@
+:root {
+  /** Global - Black <-> White shades **/
+  --var-color-black: #222428;
+  --var-color-black-90perc: #383a3e;
+  --var-color-black-80perc: #4e5053;
+  --var-color-black-70perc: #646669;
+  --var-color-black-60perc: #7a7c7e;
+  --var-color-black-50perc: #919294;
+  --var-color-black-40perc: #a7a7a9;
+  --var-color-black-30perc: #bdbdbf;
+  --var-color-black-20perc: #d3d3d4;
+  --var-color-black-10perc: #e9e9ea;
+  --var-color-white: #ffffff;
+
+  /** Global - Borders **/
+  --var-border-color: #dddddd;
+  --var-dm-border-color: #6a6a6a; // 'dm' - Dark Mode
+
+  /** Global - Text **/
+  --var-text-color-medium: var(--var-color-black-90perc, #383a3e);
+  --var-text-color-light: var(--var-color-black-50perc, #919294);
+
+  /** Notifications - Custom colors (badges, chip, toast, etc) **/
+  --var-notification-color-primary: #209cf6;
+  --var-notification-color-secondary: #3dc2ff;
+  --var-notification-color-tertiary: #5260ff;
+  --var-notification-color-success: #00ad3a;
+  --var-notification-color-warning: #ffbd18;
+  --var-notification-color-danger: #ff0808;
+  --var-notification-color-dark: var(--var-color-black, #222428);
+  --var-notification-color-medium: var(--var-color-50perc, #92949c);
+  --var-notification-color-light: var(--var-color-10perc, #e9e9ea);
+
+  /** 'ion-content' - Custom colors **/
+  --var-content-background: #f1f1f1;
+  --var-dm-content-background: #202020; // 'dm' - Dark Mode
+}

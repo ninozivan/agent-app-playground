@@ -37,6 +37,24 @@
               },
               {
                 "input": "src/global.scss"
+              },
+              {
+                "input": "src/theme/showingtime-variables.scss"
+              },
+              {
+                "input": "src/theme/showingtime-colors.scss"
+              },
+              {
+                "input": "src/theme/showingtime-typography.scss"
+              },
+              {
+                "input": "src/theme/showingtime-mixins.scss"
+              },
+              {
+                "input": "src/theme/showingtime-ui-elements.scss"
+              },
+              {
+                "input": "src/theme/showingtime-layout.scss"
               }
             ],
             "scripts": []

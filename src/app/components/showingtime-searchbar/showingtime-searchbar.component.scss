@@ -1,0 +1,30 @@
+@import "../../../theme/showingtime-mixins.scss";
+
+:host {
+  display: inline-block;
+  position: relative;
+  overflow: hidden;
+  box-sizing: border-box;
+  background-color: var(--var-color-white, #ffffff);
+  border-radius: var(--var-border-radius-large, 6px);
+  //border: 1px solid var(--var-text-color-light, #383a3e);
+}
+
+.st-flex-container {
+  justify-content: space-between;
+
+  .st-has-searchbar {
+    min-width: 200px;
+    flex-grow: 3;
+  }
+
+  .st-has-button {
+    flex-shrink: 10;
+    min-width: var(--var-searchbar-height, 36px);
+    text-align: center;
+    ion-icon{
+        color: var(--var-text-color-light, #919294);
+        font-size: 18px;
+    }
+  }
+}
