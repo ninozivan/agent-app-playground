@@ -45,3 +45,9 @@
     @content;
   }
 }
+
+@mixin mx-breakpoint-desktop-up {
+  @media (min-width: 992px) {
+    @content;
+  }
+}

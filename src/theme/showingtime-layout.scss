@@ -6,18 +6,41 @@ ion-app {
   margin-bottom: env(safe-area-inset-bottom); // > iOS11.2
 }
 
+.st-hide-desktop-up {
+  @include mx-breakpoint-desktop-up() {
+    display: none;
+  }
+}
+
 $var-sidebar-width: var(--var-sidebar-width);
 
 ion-content {
   --background: var(--var-content-background);
 
-  &.st-has-sidebar-left {
-    --padding-start: var(--var-sidebar-width);
+  &.st-has-sidebar-left-lg-up {
+    .st-sidebar-left {
+      display: none;
+    }
+    @include mx-breakpoint-lg-up() {
+      --padding-start: var(--var-sidebar-width);
+      .st-sidebar-left {
+        display: initial;
+      }
+    }
   }
-  &.st-has-sidebar-right {
-    --padding-end: var(--var-sidebar-width);
+  &.st-has-sidebar-right-lg-up {
+    .st-sidebar-right {
+      display: none;
+    }
+    @include mx-breakpoint-lg-up() {
+      --padding-end: var(--var-sidebar-width);
+      .st-sidebar-right {
+        display: initial;
+      }
+    }
   }
 }
+
 @media (prefers-color-scheme: dark) {
   ion-content {
     --background: var(--var-dm-content-background);
@@ -37,6 +60,8 @@ ion-content {
   display: inline-block;
   width: $var-sidebar-width;
   box-sizing: border-box;
+  overflow-y: auto;
+  overflow-x: hidden;
 
   &.st-sidebar-left {
     top: 0;
