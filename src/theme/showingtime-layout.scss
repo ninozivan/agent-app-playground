@@ -1,3 +1,5 @@
+@import "../theme/showingtime-mixins.scss";
+
 ion-app {
   /* IMPORTANT: constant and env, are used for adding safe space area on the devices with notch. Otherwise, when application is started as a PWA (from the 'desktop' icon of the phone, any footer content will overlap with native on-screen buttons */
   margin-bottom: constant(safe-area-inset-bottom); // < iOS 11.2
@@ -14,6 +16,20 @@ ion-content {
   }
   &.st-has-sidebar-right {
     --padding-end: var(--var-sidebar-width);
+  }
+}
+@media (prefers-color-scheme: dark) {
+  ion-content {
+    --background: var(--var-dm-content-background);
+  }
+}
+
+.st-flex-container {
+  display: flex;
+  box-sizing: border-box;
+  width: 100%;
+  &.st-items-align-center {
+    align-items: center;
   }
 }
 
@@ -33,11 +49,8 @@ ion-content {
     right: 0;
     left: auto;
     bottom: 0;
-  }
-}
-
-@media (prefers-color-scheme: dark) {
-  ion-content {
-    --background: var(--var-dm-content-background);
+    @include mx-breakpoint-lg-up() {
+      border: 1px solid #f00;
+    }
   }
 }
