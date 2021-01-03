@@ -1,0 +1,62 @@
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  > li {
+    display: inline-block;
+    width: 20%;
+    > a {
+      display: block;
+      text-align: center;
+      text-decoration: none;
+      color: var(--var-text-color-medium, #383a3e);
+      padding: 8px 2px;
+      cursor: pointer;
+      line-height: 1;
+
+      &:hover {
+        color: var(--var-text-color-link, #282f81);
+      }
+
+      .st-has-icon {
+        position: relative;
+        display: inline-block;
+        ion-badge {
+          position: absolute;
+          top: 0;
+          right: -8px;
+          z-index: 1;
+        }
+        ion-icon {
+          font-size: 24px;
+        }
+      }
+
+      .st-has-page-title {
+        font-size: 10px;
+      }
+    }
+
+    &.st-is-active {
+      position: relative;
+      &:before {
+        content: "";
+        display: block;
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: auto;
+        height: 3px;
+        background-color: var(--var-text-color-link, #282f81);
+      }
+      > a {
+        color: var(--var-text-color-link, #282f81);
+        .st-has-page-title {
+          color: var(--var-text-color-link, #282f81);
+        }
+      }
+    }
+  }
+}
