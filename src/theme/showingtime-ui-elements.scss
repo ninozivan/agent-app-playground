@@ -132,21 +132,28 @@ ion-badge {
 }
 
 ion-searchbar {
-  --background: var(--var-color-white, #ffffff) !important;
-  --border-radius: var(--var-border-radius-large, 6px) !important;
-  --box-shadow: none !important;
-  --clear-button-color: var(--var-text-color-light, #383a3e) !important;
-  --color: var(--var-text-color-medium, #383a3e) !important;
-  --icon-color: var(--var-text-color-light, #383a3e) !important;
-  --placeholder-color: var(--var-text-color-light, #383a3e) !important;
+  &.st-searchbar {
+    --background: var(--var-color-white, #ffffff);
+    --border-radius: var(--var-border-radius-large, 6px);
+    --box-shadow: none;
+    --clear-button-color: var(--var-text-color-light, #919294);
+    --color: var(--var-text-color-medium, #383a3e);
+    --icon-color: var(--var-text-color-light, #919294);
+    --placeholder-color: var(--var-text-color-light, #919294);
+    font-size: var(--var-typography-default-size, 16px);
+    padding: 0;
+    height: var(--var-searchbar-height, 36px);
 
-  font-size: var(--var-typography-default-size, 16px);
-  .searchbar-input-container {
-    input {
-      padding-left: var(--var-spacing-medium, 14px) !important;
-    }
-    ion-icon.searchbar-search-icon {
-      display: none;
+    .searchbar-input-container {
+      input {
+        padding-left: var(--var-spacing-medium, 14px) !important;
+        padding-inline-start: var(--var-spacing-medium, 14px) !important;
+      }
+      ion-icon {
+        &.searchbar-search-icon {
+          display: none;
+        }
+      }
     }
   }
 }

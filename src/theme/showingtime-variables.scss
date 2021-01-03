@@ -1,5 +1,12 @@
 :root {
-  --var-sidebar-width: 220px;
+  // Global - Breakpoints
+  --var-breakpoint-value-xs: 0;
+  --var-breakpoint-value-xs375: 375px;
+  --var-breakpoint-value-sm: 576px;
+  --var-breakpoint-value-md: 768px;
+  --var-breakpoint-value-lg: 992px;
+  --var-breakpoint-value-xl: 1200px;
+  --var-breakpoint-value-xxl: 1920px;
 
   // Global - Spacing
   --var-spacing-tiny: 4px;
@@ -53,12 +60,9 @@
   --var-badge-padding-x: 4px;
   --var-badge-padding-y: 2px;
 
-  // Breakpoints
-  --var-breakpoint-value-xs: 0;
-  --var-breakpoint-value-xs375: 375px;
-  --var-breakpoint-value-sm: 576px;
-  --var-breakpoint-value-md: 768px;
-  --var-breakpoint-value-lg: 992px;
-  --var-breakpoint-value-xl: 1200px;
-  --var-breakpoint-value-xxl: 1920px;
+  // Searchbar
+  --var-searchbar-height: 36px;
+
+  // Sidebar
+  --var-sidebar-width: 220px;
 }
