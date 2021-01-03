@@ -52,7 +52,7 @@
 }
 
 /* Ionic grid columns size percentages */
-@mixin ionic-grid-column-size-percentages {
+@mixin mx-enable-column-size-attribute {
   &[size="1"] {
     width: 8.3333%;
   }
