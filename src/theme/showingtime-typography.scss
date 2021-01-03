@@ -140,3 +140,9 @@ p {
 small {
   font-size: var(--var-typography-small-size, 12px);
 }
+
+.st-txt-as-link {
+  color: var(--var-text-color-link, #f00);
+  text-decoration: underline;
+  cursor: pointer;
+}

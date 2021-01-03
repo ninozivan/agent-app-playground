@@ -11,7 +11,7 @@
   --var-color-black-20perc: #d3d3d4;
   --var-color-black-10perc: #e9e9ea;
   --var-color-white: #ffffff;
-
+  
   /** Global - Borders **/
   --var-border-color: #dddddd;
   --var-dm-border-color: #6a6a6a; // 'dm' - Dark Mode
@@ -19,7 +19,8 @@
   /** Global - Text **/
   --var-text-color-medium: var(--var-color-black-90perc, #383a3e);
   --var-text-color-light: var(--var-color-black-50perc, #919294);
-  --var-text-color-link: var(--ion-color-primary-shade, #282f81);
+  --var-text-color-link: #1883d5;
+  --var-text-color-tabs-menu-active: var(--ion-color-primary-shade, #282f81);
 
   /** Notifications - Custom colors (badges, chip, toast, etc) **/
   --var-notification-color-primary: #209cf6;
