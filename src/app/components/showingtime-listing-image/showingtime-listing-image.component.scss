@@ -1,0 +1,75 @@
+:host {
+  display: inline-block;
+  position: relative;
+  overflow: hidden;
+  box-sizing: border-box;
+  background-color: var(--ion-color-light-shade);
+  min-width: 110px;
+  min-height: 80px;
+
+  // The default behavior of the image element
+  .st-listing-image {
+    max-width: 100%;
+    max-height: 100%;
+    width: 100%;
+    height: auto;
+    opacity: 0;
+    -webkit-transition: opacity 0.5s ease-in-out;
+    -moz-transition: opacity 0.5s ease-in-out;
+    transition: opacity 0.5s ease-in-out;
+  }
+
+  // Common styles in case of the 'cover' mode
+  &.st-cover-image-width,
+  &.st-cover-image-height {
+    // The host element will have 'absolute' position and by that,
+    // it will stretch over the entire surface of the parent element.
+    // That means that, when the 'component' is in the 'cover' mode,
+    // the host element (:host) will have an absolute position within the element where it is used
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+
+    .st-listing-image {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
+  }
+
+  // The 'cover' mode; Cover host element with image height
+  &.st-cover-image-height {
+    .st-listing-image {
+      height: 100%;
+      width: auto;
+      max-width: none;
+      min-width: 100%;
+    }
+  }
+
+  // The 'cover' mode; Cover host element with image width
+  &.st-cover-image-width {
+    .st-listing-image {
+      height: auto;
+      width: 100%;
+      max-height: none;
+      min-height: 100%;
+    }
+  }
+
+  // Once the image is loaded, animate the opacity
+  &.st-animate-image-opacity {
+    background-color: initial;
+    .st-listing-image {
+      opacity: 1;
+    }
+  }
+}
+
+// 'Hide' the image in the case when the URL is broken
+.st-hide-image {
+  display: none;
+}
