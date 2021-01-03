@@ -1,0 +1,23 @@
+:host {
+  display: inline-block;
+  position: relative;
+  line-height: 1;
+}
+
+.st-has-detail {
+  margin: 0;
+  font-size: 12px;
+  color: var(--var-text-color-light, #919294);
+  margin-right: 6px;
+
+  &:last-child {
+    margin-right: 0;
+  }
+
+  ion-icon {
+    font-size: inherit;
+    line-height: 1;
+    position: relative;
+    top: 2px;
+  }
+}
