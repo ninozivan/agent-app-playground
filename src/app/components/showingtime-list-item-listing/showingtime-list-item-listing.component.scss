@@ -1,5 +1,79 @@
+@import "../../../theme/showingtime-mixins.scss";
+
 :host {
   display: block;
   position: relative;
   border: 1px solid green;
+  color: black;
+  line-height: 1;
+  ion-icon {
+    color: black;
+  }
+}
+
+.st-flex-container {
+  > .st-has-image {
+    position: relative;
+    width: 120px;
+    min-width: 120px;
+    max-width: 120px;
+    min-height: 90px;
+    line-height: 0;
+
+    app-showingtime-listing-image {
+      z-index: 0;
+    }
+
+    app-showingtime-listing-appointment-status-badge {
+      position: absolute;
+      top: 0;
+      left: 0;
+      z-index: 1;
+    }
+  }
+
+  > .st-has-details {
+    flex-grow: 10;
+    .st-flex-container {
+      align-items: center;
+      justify-content: space-between;
+
+      &.st-row-with-details {
+        flex-direction: column;
+        align-items: flex-start;
+        @include mx-breakpoint-sm-up {
+          flex-direction: row;
+        }
+
+        .st-has-price-and-interior-details {
+          app-showingtime-listing-price {
+            display: none;
+            @include mx-breakpoint-sm-up {
+              display: block;
+            }
+          }
+        }
+
+        .st-has-share-options {
+          display: none;
+          white-space: nowrap;
+          @include mx-breakpoint-sm-up {
+            display: block;
+          }
+        }
+      }
+      &.st-row-with-action-buttons {
+        display: none;
+        @include mx-breakpoint-sm-up {
+          display: initial;
+        }
+      }
+    }
+  }
+
+  > .st-has-mobile-actions {
+    @include mx-breakpoint-sm-up {
+      display: none;
+    }
+  }
 }
