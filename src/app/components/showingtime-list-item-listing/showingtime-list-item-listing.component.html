@@ -9,34 +9,35 @@
   </div>
   <!-- Listing Details -->
   <div class="st-has-details">
-    <!-- First row - Listing Details -->
-    <div class="st-flex-container st-row-with-details">
-      <div class="st-has-address">
-        <app-showingtime-listing-address></app-showingtime-listing-address>
+    <div class="st-flex-container">
+      <!-- First row - Listing Details -->
+      <div class="st-row-with-details">
+        <div class="st-flex-container">
+          <div class="st-has-address">
+            <app-showingtime-listing-address></app-showingtime-listing-address>
+          </div>
+          <div class="st-has-price-and-interior-details">
+            <app-showingtime-listing-price></app-showingtime-listing-price>
+            <app-showingtime-listing-interior-details></app-showingtime-listing-interior-details>
+          </div>
+          <div class="st-has-mls-details">
+            <div>Phil Dunphy</div>
+            <app-showingtime-listing-mls-details></app-showingtime-listing-mls-details>
+          </div>
+          <div class="st-has-share-options">
+            <ion-button color="clear">
+              <ion-icon slot="icon-only" name="shuffle"></ion-icon>
+            </ion-button>
+            <ion-button color="clear">
+              <ion-icon slot="icon-only" name="heart"></ion-icon>
+            </ion-button>
+          </div>
+        </div>
       </div>
-      <div class="st-has-price-and-interior-details">
-        <app-showingtime-listing-price></app-showingtime-listing-price>
-        <app-showingtime-listing-interior-details></app-showingtime-listing-interior-details>
+      <!-- Second row - Action button (desktop) -->
+      <div class="st-row-with-action-buttons">
+        <app-showingtime-listing-action-buttons></app-showingtime-listing-action-buttons>
       </div>
-      <div class="st-has-mls-details">
-        <div>Phil Dunphy</div>
-        <app-showingtime-listing-mls-details></app-showingtime-listing-mls-details>
-      </div>
-      <div class="st-has-share-options">
-        <ion-button color="clear">
-          <ion-icon slot="icon-only" name="shuffle"></ion-icon>
-        </ion-button>
-        <ion-button color="clear">
-          <ion-icon slot="icon-only" name="heart"></ion-icon>
-        </ion-button>
-      </div>
-    </div>
-    <!-- Second row - Action button (desktop) -->
-    <div class="st-flex-container st-row-with-action-buttons">
-      <ion-button size="small">Schedule Showing</ion-button>
-      <ion-button size="small">Add to Tour</ion-button>
-      <ion-button size="small">Submit Offer</ion-button>
-      <ion-button size="small">Messaging</ion-button>
     </div>
   </div>
   <!-- Action buttons (mobile)-->

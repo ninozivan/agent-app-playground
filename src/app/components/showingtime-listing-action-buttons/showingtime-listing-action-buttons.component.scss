@@ -1,0 +1,13 @@
+:host {
+  display: block;
+  position: relative;
+  box-sizing: border-box;
+  border-top: 1px solid var(--var-border-color, #dddddd);
+}
+
+.st-flex-container {
+  justify-content: flex-end;
+  .st-flex-item {
+    border-left: 1px solid var(--var-border-color, #dddddd);
+  }
+}

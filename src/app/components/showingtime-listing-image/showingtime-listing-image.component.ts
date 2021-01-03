@@ -100,7 +100,7 @@ export class ShowingtimeListingImageComponent
     this.adjustAppearance();
 
     this.platform.resize
-      .pipe(takeUntil(this.componentDestroyed$), debounceTime(30))
+      .pipe(takeUntil(this.componentDestroyed$), debounceTime(20))
       .subscribe(() => {
         this.adjustAppearance();
       });
