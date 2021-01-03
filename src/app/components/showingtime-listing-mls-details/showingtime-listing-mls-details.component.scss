@@ -1,0 +1,36 @@
+:host {
+  display: inline-block;
+  position: relative;
+  line-height: 1;
+}
+
+.st-has-detail {
+  margin: 0;
+  font-size: 12px;
+  margin-right: 14px;
+  position: relative;
+  float: left;
+
+  &:not(.st-txt-as-link) {
+    color: var(--var-text-color-light, #919294);
+  }
+
+  &:before {
+    content: "";
+    display: block;
+    position: absolute;
+    width: 1px;
+    height: 12px;
+    right: -7px;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: var(--var-text-color-light, #919294);
+  }
+
+  &:last-child {
+    margin-right: 0;
+    &::before {
+      display: none;
+    }
+  }
+}
