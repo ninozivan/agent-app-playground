@@ -1,0 +1,49 @@
+@import "../../../theme/showingtime-mixins.scss";
+
+$var-logo-width: 164px;
+$var-logo-left-position: calc(
+  var(--var-sidebar-width) / 2 - #{$var-logo-width} / 2
+);
+
+:host {
+  background-color: var(--var-color-navy-blue, #010570);
+  display: block;
+  position: relative;
+  line-height: 0;
+  overflow: hidden;
+  height: var(--var-header-height);
+  padding-left: 0;
+
+  app-showingtime-logo {
+    display: none;
+    position: absolute;
+    bottom: 10px;
+    left: $var-logo-left-position;
+    width: $var-logo-width;
+  }
+
+  .st-main-content {
+    display: flex;
+    height: 100%;
+    align-items: flex-start;
+    line-height: 1;
+    color: var(--var-color-white);
+    padding-bottom: 10px;
+
+    .st-has-button {
+      padding-top: 18px;
+      .st-back-button {
+        ion-icon {
+          font-size: 20px;
+        }
+      }
+    }
+  }
+
+  @include mx-breakpoint-lg-up() {
+    padding-left: var(--var-sidebar-width);
+    app-showingtime-logo {
+      display: inline-block;
+    }
+  }
+}

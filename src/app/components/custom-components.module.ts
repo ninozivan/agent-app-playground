@@ -13,6 +13,9 @@ import { ShowingtimeListingInteriorDetailsComponent } from "./showingtime-listin
 import { ShowingtimeListingMlsDetailsComponent } from "./showingtime-listing-mls-details/showingtime-listing-mls-details.component";
 import { ShowingtimeListingActionButtonsComponent } from "./showingtime-listing-action-buttons/showingtime-listing-action-buttons.component";
 import { ShowingtimeListItemListingComponent } from "./showingtime-list-item-listing/showingtime-list-item-listing.component";
+import { ShowingtimeLogoComponent } from "./showingtime-logo/showingtime-logo.component";
+import { ShowingtimeHeaderComponent } from "./showingtime-header/showingtime-header.component";
+import { ShowingtimeHeaderDecorationShapesComponent } from "./showingtime-header-decoration-shapes/showingtime-header-decoration-shapes.component";
 
 @NgModule({
   imports: [CommonModule, FormsModule, IonicModule],
@@ -28,6 +31,9 @@ import { ShowingtimeListItemListingComponent } from "./showingtime-list-item-lis
     ShowingtimeListingMlsDetailsComponent,
     ShowingtimeListingActionButtonsComponent,
     ShowingtimeListItemListingComponent,
+    ShowingtimeLogoComponent,
+    ShowingtimeHeaderDecorationShapesComponent,
+    ShowingtimeHeaderComponent,
   ],
   exports: [
     ShowingtimeSearchbarComponent,
@@ -44,6 +50,9 @@ import { ShowingtimeListItemListingComponent } from "./showingtime-list-item-lis
     ShowingtimeListingMlsDetailsComponent,
     ShowingtimeListingActionButtonsComponent,
     ShowingtimeListItemListingComponent,
+    ShowingtimeLogoComponent,
+    ShowingtimeHeaderDecorationShapesComponent,
+    ShowingtimeHeaderComponent,
   ],
 })
 export class CustomComponentsModule {}

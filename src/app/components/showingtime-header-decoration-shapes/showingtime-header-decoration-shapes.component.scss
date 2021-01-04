@@ -1,0 +1,35 @@
+@import "../../../theme/showingtime-mixins.scss";
+
+:host {
+  z-index: 0;
+  display: block;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+
+  .st-header-decoration-image {
+    display: inline-block;
+    position: absolute;
+    height: 100%;
+    width: auto;
+
+    &.st-to-left {
+      display: none;
+      top: 0;
+      left: 0;
+      transform: scaleX(-1);
+      transform: scaleY(-1);
+
+      @include mx-breakpoint-lg-up() {
+        display: inline-block;
+      }
+    }
+
+    &.st-to-right {
+      top: 0;
+      right: 0;
+    }
+  }
+}
