@@ -1,0 +1,49 @@
+<div class="st-flex-container">
+  <!-- Listing Image -->
+  <div class="st-has-image">
+    <app-showingtime-listing-appointment-status-badge></app-showingtime-listing-appointment-status-badge>
+    <app-showingtime-listing-image
+      imgSrc="https://photos.zillowstatic.com/fp/0b75b31cd780e6f0e32de88939938b81-cc_ft_768.jpg"
+      mode="cover"
+    ></app-showingtime-listing-image>
+  </div>
+  <!-- Listing Details -->
+  <div class="st-has-details">
+    <div class="st-flex-container">
+      <!-- First row - Listing Details -->
+      <div class="st-row-with-details">
+        <div class="st-flex-container">
+          <div class="st-has-address">
+            <app-showingtime-listing-address></app-showingtime-listing-address>
+          </div>
+          <div class="st-has-price-and-interior-details">
+            <app-showingtime-listing-price></app-showingtime-listing-price>
+            <app-showingtime-listing-interior-details></app-showingtime-listing-interior-details>
+          </div>
+          <div class="st-has-mls-details">
+            <div>Phil Dunphy</div>
+            <app-showingtime-listing-mls-details></app-showingtime-listing-mls-details>
+          </div>
+          <div class="st-has-share-options">
+            <ion-button color="clear">
+              <ion-icon slot="icon-only" name="shuffle"></ion-icon>
+            </ion-button>
+            <ion-button color="clear">
+              <ion-icon slot="icon-only" name="heart"></ion-icon>
+            </ion-button>
+          </div>
+        </div>
+      </div>
+      <!-- Second row - Action button (desktop) -->
+      <div class="st-row-with-action-buttons">
+        <app-showingtime-listing-action-buttons></app-showingtime-listing-action-buttons>
+      </div>
+    </div>
+  </div>
+  <!-- Action buttons (mobile)-->
+  <div class="st-has-mobile-actions">
+    <ion-button color="clear">
+      <ion-icon slot="icon-only" name="menu"></ion-icon>
+    </ion-button>
+  </div>
+</div>

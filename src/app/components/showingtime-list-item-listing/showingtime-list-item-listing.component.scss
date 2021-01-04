@@ -1,0 +1,131 @@
+@import "../../../theme/showingtime-mixins.scss";
+
+:host {
+  display: block;
+  position: relative;
+  border: 1px solid var(--var-border-color, #dddddd);
+  background-color: var(--var-color-white, #ffffff);
+  color: black;
+  line-height: 1;
+  overflow: hidden;
+
+  @include mx-breakpoint-sm-up {
+    border-radius: var(--var-border-radius-default, 4px);
+  }
+
+  ion-icon {
+    color: black;
+  }
+}
+
+.st-flex-container {
+  > .st-has-image {
+    position: relative;
+    width: 120px;
+    min-width: 120px;
+    max-width: 120px;
+    min-height: 90px;
+    line-height: 0;
+
+    app-showingtime-listing-image {
+      z-index: 0;
+    }
+
+    app-showingtime-listing-appointment-status-badge {
+      position: absolute;
+      top: 4px;
+      left: 0;
+      z-index: 1;
+
+      @include mx-breakpoint-sm-up {
+        top: auto;
+        bottom: 8px;
+      }
+    }
+  }
+
+  > .st-has-details {
+    flex-grow: 10;
+
+    > .st-flex-container {
+      height: 100%;
+      flex-direction: column;
+      align-items: flex-start;
+      // A. Row with Listing Details
+      // B. Row with Action buttons
+    }
+  }
+
+  > .st-has-mobile-actions {
+    @include mx-breakpoint-sm-up {
+      display: none;
+    }
+  }
+}
+
+// A. Row with Listing Details
+.st-row-with-details {
+  width: 100%;
+
+  .st-flex-container {
+    justify-content: space-between;
+    flex-direction: column;
+    padding: 6px 0;
+    @include mx-breakpoint-sm-up {
+      flex-direction: row;
+      padding: 0;
+    }
+
+    .st-has-address,
+    .st-has-price-and-interior-details,
+    .st-has-mls-details {
+      padding: 4px 10px;
+
+      @include mx-breakpoint-sm-up {
+        padding: 10px;
+        &:first-child {
+          padding-bottom: 10px;
+        }
+        &:last-child {
+          padding-top: 10px;
+        }
+      }
+    }
+
+    .st-has-price-and-interior-details {
+      app-showingtime-listing-price {
+        display: none;
+        @include mx-breakpoint-sm-up {
+          display: block;
+        }
+      }
+      app-showingtime-listing-interior-details {
+        margin-top: 2px;
+      }
+    }
+
+    .st-has-mls-details {
+      app-showingtime-listing-mls-details {
+        margin-top: 4px;
+      }
+    }
+
+    .st-has-share-options {
+      display: none;
+      white-space: nowrap;
+      @include mx-breakpoint-sm-up {
+        display: block;
+      }
+    }
+  }
+}
+
+// B. Row with Action buttons
+.st-row-with-action-buttons {
+  width: 100%;
+  margin-top: auto;
+  display: none;
+  @include mx-breakpoint-sm-up {
+    display: block;
+  }
+}

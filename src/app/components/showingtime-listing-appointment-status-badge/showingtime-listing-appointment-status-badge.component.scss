@@ -1,0 +1,19 @@
+:host {
+  display: inline-block;
+  box-sizing: border-box;
+  position: relative;
+  text-align: center;
+  padding: 3px 6px;
+
+  background-color: var(--var-notification-color-danger);
+  color: var(--var-color-white);
+  border-radius: var(--var-border-radius-default, 4px);
+
+  font-size: 10px;
+  line-height: 1;
+  overflow: hidden;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  text-transform: uppercase;
+}

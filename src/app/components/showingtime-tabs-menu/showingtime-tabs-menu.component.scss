@@ -16,7 +16,7 @@ ul {
       line-height: 1;
 
       &:hover {
-        color: var(--var-text-color-link, #282f81);
+        color: var(--var-text-color-tabs-menu-active, #282f81);
       }
 
       .st-has-icon {
@@ -49,12 +49,12 @@ ul {
         right: 0;
         bottom: auto;
         height: 3px;
-        background-color: var(--var-text-color-link, #282f81);
+        background-color: var(--var-text-color-tabs-menu-active, #282f81);
       }
       > a {
-        color: var(--var-text-color-link, #282f81);
+        color: var(--var-text-color-tabs-menu-active, #282f81);
         .st-has-page-title {
-          color: var(--var-text-color-link, #282f81);
+          color: var(--var-text-color-tabs-menu-active, #282f81);
         }
       }
     }

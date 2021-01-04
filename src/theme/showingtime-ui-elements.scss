@@ -157,3 +157,15 @@ ion-searchbar {
     }
   }
 }
+
+.st-list-of-custom-items {
+  display: block;
+  position: relative;
+  > .st-list-item {
+    display: block;
+    position: relative;
+    @include mx-breakpoint-sm-up {
+      margin-bottom: 10px;
+    }
+  }
+}

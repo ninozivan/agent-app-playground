@@ -69,13 +69,11 @@ ion-content {
     left: 0;
     bottom: 0;
   }
+
   &.st-sidebar-right {
     top: 0;
     right: 0;
     left: auto;
     bottom: 0;
-    @include mx-breakpoint-lg-up() {
-      border: 1px solid #f00;
-    }
   }
 }

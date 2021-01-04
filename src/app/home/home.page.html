@@ -10,26 +10,59 @@
   </div>
 
   <ion-grid fixed>
-    <ion-row>
-      <ion-col> ion-col </ion-col>
-      <ion-col> ion-col </ion-col>
-      <ion-col> ion-col </ion-col>
-      <ion-col> ion-col </ion-col>
-    </ion-row>
-    <ion-row>
-      <ion-col size="3"> ion-col [size="3"] </ion-col>
-      <ion-col size="3" offset="3"> ion-col [size="3"] [offset="3"] </ion-col>
-    </ion-row>
-    <ion-row>
-      <ion-col class="ion-align-self-start"> ion-col [start] </ion-col>
-      <ion-col class="ion-align-self-center"> ion-col [center] </ion-col>
-      <ion-col class="ion-align-self-end"> ion-col [end] </ion-col>
-      <ion-col>
-        ion-col
-        <br /># <br />#
+    <!-- Sorting options -->
+    <ion-row class="ion-align-items-center">
+      <ion-col class="ion-no-padding"
+        >3 Results Out of 74 Total Listings</ion-col
+      >
+      <ion-col class="ion-no-padding ion-text-right">
+        <ion-button size="small" fill="clear">
+          Sort
+          <ion-icon slot="end" name="arrow-down"></ion-icon>
+        </ion-button>
       </ion-col>
     </ion-row>
-    <strong>Ready to create an app?</strong>
+    <!-- Listing Items-->
+    <div class="st-list-of-custom-items" role="list">
+      <app-showingtime-list-item-listing
+        role="listitem"
+        aria-label="1"
+        class="st-list-item"
+      ></app-showingtime-list-item-listing>
+      <app-showingtime-list-item-listing
+        role="listitem"
+        aria-label="2"
+        class="st-list-item"
+      ></app-showingtime-list-item-listing>
+      <app-showingtime-list-item-listing
+        role="listitem"
+        aria-label="3"
+        class="st-list-item"
+      ></app-showingtime-list-item-listing>
+      <app-showingtime-list-item-listing
+        role="listitem"
+        aria-label="4"
+        class="st-list-item"
+      ></app-showingtime-list-item-listing>
+    </div>
+    <!-- Ionic elements -->
+    <br />
+    <div><strong>ShowingTime - Typography</strong></div>
+    <h1>Heading 1</h1>
+    <h2>Heading 2</h2>
+    <h3>Heading 3</h3>
+    <h4>Heading 4</h4>
+    <h5>Heading 5</h5>
+    <h6>Heading 6</h6>
+    <p>
+      If another developer wrote this markup, and we weren’t familiar with the
+      CSS, we should still have a good idea of which classes are responsible for
+      what and how they depend on one another. Developers can then build their
+      own components and modify the existing block to their heart’s content.
+      Without writing much CSS, developers are potentially capable of creating
+      many different combinations of buttons simply by changing a class in the
+      markup:
+    </p>
     <p>
       Start with Ionic
       <a
@@ -39,39 +72,18 @@
         >UI Components</a
       >
     </p>
-    <p>
-      If another developer wrote this markup, and we weren’t familiar with the
-      CSS, we should still have a good idea of which classes are responsible for
-      what and how they depend on one another. Developers can then build their
-      own components and modify the existing block to their heart’s content.
-      Without writing much CSS, developers are potentially capable of creating
-      many different combinations of buttons simply by changing a class in the
-      markup:
-    </p>
-    <p>
-      If another developer wrote this markup, and we weren’t familiar with the
-      CSS, we should still have a good idea of which classes are responsible for
-      what and how they depend on one another. Developers can then build their
-      own components and modify the existing block to their heart’s content.
-      Without writing much CSS, developers are potentially capable of creating
-      many different combinations of buttons simply by changing a class in the
-      markup:
-    </p>
-    <p>
-      If another developer wrote this markup, and we weren’t familiar with the
-      CSS, we should still have a good idea of which classes are responsible for
-      what and how they depend on one another. Developers can then build their
-      own components and modify the existing block to their heart’s content.
-      Without writing much CSS, developers are potentially capable of creating
-      many different combinations of buttons simply by changing a class in the
-      markup:
-    </p>
     <!-- SEARCHBAR -->
-    <h1>Searchbar here</h1>
+    <br />
+    <div class="ion-margin-top ion-margin-bottom">
+      <strong>ShowingTime - Searchbar</strong>
+    </div>
     <app-showingtime-searchbar></app-showingtime-searchbar>
 
     <!-- BUTTONS -->
-    <hr />
+    <br />
+    <div class="ion-margin-top ion-margin-bottom">
+      <strong>ShowingTime - Buttons</strong>
+    </div>
     <ion-button color="primary">Primary</ion-button>
     <ion-button color="secondary">Secondary</ion-button>
     <ion-button color="tertiary">Tertiary</ion-button>
@@ -84,6 +96,10 @@
     <ion-button shape="round">Round Button</ion-button>
 
     <!-- Icons -->
+    <br />
+    <div class="ion-margin-top ion-margin-bottom">
+      <strong>ShowingTime - Icon Buttons</strong>
+    </div>
     <ion-button size="large">
       <ion-icon slot="start" name="star"></ion-icon>
       Left Icon
@@ -99,12 +115,19 @@
     </ion-button>
 
     <!-- Sizes -->
-    <hr />
+    <br />
+    <div class="ion-margin-top ion-margin-bottom">
+      <strong>ShowingTime - Sizes of Buttons</strong>
+    </div>
     <ion-button size="large">Large</ion-button>
     <ion-button>Default</ion-button>
     <ion-button size="small">Small</ion-button>
     <ion-button size="tiny">Tiny Button</ion-button>
-    <hr />
+
+    <br />
+    <div class="ion-margin-top ion-margin-bottom">
+      <strong>ShowingTime - Variations of Buttons</strong>
+    </div>
     <ion-button size="large" expand="block">Large</ion-button>
     <ion-button expand="block">Default</ion-button>
     <ion-button size="small" expand="block">Small</ion-button>
@@ -123,7 +146,10 @@
     >
 
     <!-- TOGGLE -->
-    <hr />
+    <br />
+    <div class="ion-margin-top ion-margin-bottom">
+      <strong>ShowingTime - Toggle</strong>
+    </div>
     <ion-toggle color="primary"></ion-toggle>
     <ion-toggle color="secondary"></ion-toggle>
     <ion-toggle color="danger"></ion-toggle>
@@ -131,7 +157,10 @@
     <ion-toggle color="dark"></ion-toggle>
 
     <!-- BADGES & CHIPS -->
-    <hr />
+    <br />
+    <div class="ion-margin-top ion-margin-bottom">
+      <strong>ShowingTime - Badges</strong>
+    </div>
     <!-- Colors -->
     <ion-badge first="xxx">xxx</ion-badge>
     <ion-badge color="primary">11</ion-badge>
@@ -143,13 +172,19 @@
     <ion-badge color="light">77</ion-badge>
     <ion-badge color="medium">88</ion-badge>
     <ion-badge color="dark">99</ion-badge>
-    <hr />
-    <!-- Item with badge on left and right -->
+
     <ion-item>
       <ion-badge slot="start">11</ion-badge>
       <ion-label>My Item</ion-label>
       <ion-badge slot="end">22</ion-badge>
     </ion-item>
+
+    <br />
+    <div class="ion-margin-top ion-margin-bottom">
+      <strong>ShowingTime - Chips</strong>
+    </div>
+    <!-- Item with badge on left and right -->
+
     <ion-chip>
       <ion-label>Default</ion-label>
     </ion-chip>
@@ -237,14 +272,38 @@
   </ion-grid>
 
   <div slot="fixed" class="st-sidebar st-sidebar-right">
-    <h1>Fixed Content Right 1</h1>
-    <h1>Fixed Content Right 2</h1>
-    <h1>Fixed Content Right 3</h1>
-    <h1>Fixed Content Right</h1>
-    <h1>Fixed Content Right</h1>
-    <h1>Fixed Content Right</h1>
-    <h1>Fixed Content Right</h1>
-    <h1>Fixed Content Right</h1>
+    <!-- Section -->
+    <h6>My Calendar</h6>
+    <ion-card class="ion-no-margin">
+      <ion-card-content>
+        <div>
+          Lorem Ipsum is simply dummy text of the printing and typesetting
+          industry. Lorem Ipsum has been the industry's standard dummy text ever
+          since the 1500s, when an unknown printer took a galley of type and
+          scrambled it to make a type specimen book.
+        </div>
+      </ion-card-content>
+    </ion-card>
+    <!-- Section -->
+    <h6>Tours</h6>
+    <ion-card class="ion-no-margin">
+      <ion-card-content>
+        <div>8/18/2020</div>
+        <div class="ion-padding-top">
+          <app-showingtime-listing-address></app-showingtime-listing-address>
+        </div>
+        <div class="ion-padding-top">
+          <app-showingtime-listing-address></app-showingtime-listing-address>
+        </div>
+      </ion-card-content>
+    </ion-card>
+    <!-- Section -->
+    <h6>Tasks</h6>
+    <ion-card class="ion-no-margin">
+      <ion-card-content class="ion-border">
+        <ion-textarea></ion-textarea>
+      </ion-card-content>
+    </ion-card>
   </div>
 </ion-content>
 
